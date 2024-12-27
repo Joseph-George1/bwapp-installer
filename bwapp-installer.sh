@@ -2,7 +2,7 @@
 
 m_ip=$(hostname -I | awk '{print $1}')
 
-chmod +x bWAPP2.2.zip
+chmod +x bWAPPv2.2.zip
 
 sudo cp -r bWAPPv2.2.zip /var/www/html
 
