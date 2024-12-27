@@ -6,7 +6,7 @@ chmod +x bWAPP2.2.zip
 
 sudo cp -r bWAPPv2.2.zip /var/www/html
 
-echo "sudo chmod +x bWAPP2.2.zip && sudo unzip bWAPPv2.2.zip -d /var/www/ && sudo chmod 777 /var/www/passwords/ /var/www/images/ /var/www/documents/ /var/www/logs/" > install.sh
+echo "sudo chmod +x bWAPP2.2.zip && sudo unzip bWAPPv2.2.zip -d /var/www/ && sudo chmod 777 /var/www/passwords/ /var/www/images/ /var/www/documents/ /var/www/logs/" > /var/www/html/install.sh
 
 sudo chmod 755 /var/www/html/install.sh
 
