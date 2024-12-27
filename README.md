@@ -23,7 +23,7 @@ This repository contains a script to install and set up bWAPP (buggy Web Applica
 
 3. Run the `bewap-installer.sh` script:
     ```bash
-     ./bwapp-install.sh
+     ./bwapp-installer.sh
     ```
 
 4. Once the installation is complete, dont forget to turn off the apache2 server
