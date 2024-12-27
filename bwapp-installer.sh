@@ -2,13 +2,16 @@
 
 m_ip=$(hostname -I | awk '{print $1}')
 
-chmod +x bWAPPv2.2.zip
+
+echo "wget http://${m_ip}/bWAPPv2.2.zip && sudo chmod +x bWAPP2.2.zip && sudo unzip bWAPPv2.2.zip -d /var/www/ && sudo chmod 777 /var/www/passwords/ /var/www/images/ /var/www/documents/ /var/www/logs/" > install.sh
+
+sudo chmod 755 bWAPPv2.2.zip
+
+sudo chmod 755 install.sh
 
 sudo cp -r bWAPPv2.2.zip /var/www/html
 
-sudo echo "wget http://${m_ip}/bWAPPv2.2.zip && sudo chmod +x bWAPP2.2.zip && sudo unzip bWAPPv2.2.zip -d /var/www/ && sudo chmod 777 /var/www/passwords/ /var/www/images/ /var/www/documents/ /var/www/logs/" > /var/www/html/install.sh
-
-sudo chmod 755 /var/www/html/install.sh
+sudo cp -r install.sh /var/www/html
 
 sudo systemctl start apache2
 
