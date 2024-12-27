@@ -2,10 +2,6 @@
 
 m_ip=$(hostname -I | awk '{print $1}')
 
-sudo get clone https://github.com/joseph-george1/bwapp-installer.git
-
-cd bwapp-installer
-
 chmod +x bWAPP2.2.zip
 
 sudo cp -r bWAPPv2.2.zip /var/www/html
