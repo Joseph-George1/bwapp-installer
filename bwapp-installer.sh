@@ -4,7 +4,7 @@
 m_ip=$(hostname -I | awk '{print $1}')
 
 # Create an install.sh script with the necessary commands
-echo -e "\033[1;32m sudo wget http://${m_ip}/bWAPPv2.2.zip && sudo chmod +x bWAPPv2.2.zip && sudo unzip bWAPPv2.2.zip -d /var/www/ && sudo chmod 777 /var/www/passwords/ /var/www/images/ /var/www/documents/ /var/www/logs/ \033[0m" > install.sh
+echo "sudo wget http://${m_ip}/bWAPPv2.2.zip && sudo chmod +x bWAPPv2.2.zip && sudo unzip bWAPPv2.2.zip -d /var/www/ && sudo chmod 777 /var/www/passwords/ /var/www/images/ /var/www/documents/ /var/www/logs/ \033[0m" > install.sh
 
 # Set executable permissions for the bWAPP zip and install.sh
 sudo chmod 755 bWAPPv2.2.zip
