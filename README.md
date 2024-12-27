@@ -18,25 +18,26 @@ This repository contains a script to install and set up bWAPP (buggy Web Applica
 
 2. Ensure you have the necessary permissions to run the installation script:
     ```bash
-    sudo chmod +x install.sh
+    sudo chmod +x bwapp-installer.sh
     ```
 
-3. Run the `install.sh` script:
+3. Run the `bewap-installer.sh` script:
     ```bash
-    sudo ./install.sh
+     ./bwapp-install.sh
     ```
 
-4. Once the installation is complete, start the Apache server:
-    ```bash
-    sudo systemctl start apache2
-    ```
-
+4. Once the installation is complete, dont forget to turn off the apache2 server
+   
 ## Additional Instructions
 
 - After running the script, you need to visit the following URL on your Metasploitable2 machine to complete the installation:
     ```bash
     http://<metasploitable2_ip>/bWAPP/install.php
     ```
+-The default username and password for bWAPP is:
+   ```
+    bee/bug
+   ```
 
 ## Contact
 
